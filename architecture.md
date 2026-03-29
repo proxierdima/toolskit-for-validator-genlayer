@@ -1,6 +1,6 @@
-## Main components
+# Main components
 
-### Install
+## Install
 
 Scripts in install/ prepare the workspace and patch existing config files.
 
@@ -13,7 +13,7 @@ Bootstrap + configure in full node mode.
 install_validator.sh
 Bootstrap + configure in validator mode.
 
-### Checks
+## Checks
 
 Scripts in checks/ validate configuration and runtime connectivity.
 
@@ -28,7 +28,7 @@ Validates WSS/WS URL format and basic TCP connectivity.
 check_sync_health.sh
 Compares local and remote block numbers and checks local health endpoint.
 
-### Monitor
+## Monitor
 
 Scripts in monitor/ provide lightweight monitoring helpers.
 
@@ -37,18 +37,20 @@ One-shot or watch-loop health checker.
 telegram_alerts.sh
 Sends Telegram messages if bot token and chat ID are configured.
 
-### Recovery
+## Recovery
 
 Scripts in recovery/ automate common recovery actions.
 
 safe_restart.sh
 resync_node.sh
 diagnose_and_fix.sh
-### Docs
+
+## Docs
 
 Human-readable runbooks and troubleshooting notes live in docs/.
 
-### Requirements
+## Requirements
+
 System packages
 
 Recommended system packages:
@@ -67,11 +69,13 @@ Python
 The current toolkit uses only Python standard library modules.
 No third-party Python packages are required.
 
-### Environment
+## Environment
 
 By default the toolkit uses:
 
+```bash
 GENLAYER_WORKSPACE="$HOME/genlayer"
+```
 
 You can override it:
 
